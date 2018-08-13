@@ -1,0 +1,114 @@
+-Exemplos de uso de criação git:
+
+global = serve para todos os usuários do pc.
+
+git config --global user.name " gwgwregw" //define o user name.
+
+git config --global user.editor //define o editor padrão
+
+
+-Consultas:
+
+git config --list // mostra todos os dados
+
+
+mkdir git-course // cria pastas/repositorio no terminalls
+
+dir git-course/ // entra na pasta criada.
+
+
+git init //inicializa o diretorio
+
+ls -la // mostra o que contém na pasta
+
+ls git-course/.git/ // mostra algumas da funções disponiveis.
+
+-Manipulando arquivos:
+
+
+vi notas.md // abre o arquivo 
+
+modo de inserção : digita "i"
+
+"ESC": sai do modo escrita
+
+modo escrita: "w"
+
+";" : inicia um comando
+
+
+-git status:
+ mostra como está o status do seu repositório
+
+"q": sai do arquvio
+
+- :wq = abre o comando escreve e salva e depois sai do arquvio
+
+
+
+-ARQUIVOS .md: 
+Estes são arquivos de texto utilizadas como arquivos
+de documentação Markdown através de dialetos da língua Markdown.
+arquivos MD são normalmente guardados em formato de texto simples, 
+incluindo símbolos de texto em linha, definindo como um texto é formatado 
+como os recortes, a sua formatação de tabela, fontes e cabeçalhos.
+
+
+
+- SSH: 
+protocolo de autenicação, onde verifica se o usuario que está mexendo no repositório tem permissão para acessa-lo e modifica-lo.
+
+- criando chave ssh. 
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+Após criar as chaves, acessa o diretorio do ssh:
+
+$ dir C:/Users/Ian/.ssh
+
+Após isso:
+
+$ cat id_rsa.pub
+
+ou acessar o diretorio .ssh e abre o arquivo da chave e copia.
+
+adiciona a chave copiada no github, assim o computador passará a ter acesso aos repositórios.
+
+-git remote: mostra os repositórios remotos da pasta atual.
+
+- git push - u origin master: Adiciona o repositório remoto no github.
+
+
+- git log: Mostra os commit já feitos. Possui várias variações
+- git log graph:
+
+- git diff: sempre use antes de realizar um commit, para saber o que foi modificado e verificar se não está fazendo alguma merda.
+
+- git remote add Nordestiny git@github.com:Ianbs1/Nordestiny_git.git: Sincroniza o repositório remoto com o github.
+
+
+DESFAZENDO MUDANÇAS:
+- git checkout: antes de dar um add no arquivo, desfaz a mudanças nele.
+
+- git reset HEAD: Se o arquivo já estiver sido adicionado "staged", faz ele voltar pro estado antes de ser add, e depois é só usa o git checkout.
+
+- git reset --soft --mixed --hard "copia e cola a hash da qual vc quer voltar" : Após o arquivo ser comitado ele, se usar o --soft, ele volta para o Estado de staged, o --mixed volta para o estado de modified e o --hard mata completamente o commit.
+
+
+FORK: 
+
+fork é uma função do github que permite vc fazer uma cópia de outros repositórios que não são seus para que vc trabalhe neles e depois upe de volta com as modificações.
+
+
+Branch:
+
+Um Branch é um local para que não precise ficar alterando diretamento no master.
+
+- git checkout -b "nomedobranch" : Cria um branch.
+
+- git checkout "nomedobranch": vai para o branch que vc digitou
+
+- git branch -D "nomedobranch" : Deleta o branch
+
+MERGE:
+Junta os commits de diferentes branchs. Ele cria um commit extra no master para juntar todos os outros commits dos outros branchs.
+
