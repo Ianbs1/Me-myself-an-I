@@ -1,0 +1,19 @@
+<!doctype html> <!-- <!DOCTYPE> informa ao agente de usuario a versão do html que deve ser renderizada -->
+
+
+<html lang="pt-br">
+    <head>
+          <title> titulo da pagina </title>
+          <meta charset="utf-8">
+          <meta name="author" content="Ian">
+          <meta name="description" content="lista de ...."> <!-- texto ao qual aparece na barra de busca do google ou outros buscadores-->
+          < meta name="keywords" content="html5, tecnologia">
+    </head>
+
+    <body>
+          <h1> estrutura basica</h1>
+
+
+    </body>
+
+</html>
