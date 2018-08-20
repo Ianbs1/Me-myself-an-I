@@ -1,0 +1,18 @@
+
+<!-- Notas sobre Css-->
+
+seletor {propriedade:valor; }
+
+h1 {color:red;}
+
+<!--seletor class-->
+
+<p class="minha-classe"> ... </P>
+
+.minha-classe {...}
+
+<!--seletor id -->
+
+<p id="meu-id"> ... </p>
+
+#meu-id {...}
