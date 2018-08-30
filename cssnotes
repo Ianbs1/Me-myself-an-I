@@ -9,10 +9,26 @@ h1 {color:red;}
 
 <p class="minha-classe"> ... </P>
 
-.minha-classe {...}
+.minha-classe {...} semelhante ao Id, só que representa um conjunto de p. ao invés de um p só.
 
 <!--seletor id -->
 
 <p id="meu-id"> ... </p>
 
-#meu-id {...}
+#meu-id {...} faz com que eu nomeie um p para que depois eu possa fazer alterações nele sem alterar os outros p.
+
+ex: #destaque {
+color: red;
+background:yellow;
+
+
+}
+
+
+  padding-left: 25px; faz com que o titulo dê margem sem que a cor do background também dê margem. Enchimento interno ao elemento.
+
+
+  <!--PSEUDO CLASSES------------------------------------------------------->
+
+
+  <!--LIST-STYLE---------------------------------->
